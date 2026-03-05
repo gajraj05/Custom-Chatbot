@@ -36,7 +36,7 @@
 # #     main()
 
 # main.py
-
+import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 from rag_chatbot.chatbot_model import ask_chatbot
