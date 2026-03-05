@@ -15,10 +15,9 @@ transformers
 torch
 
 faiss-cpu
-numpy
-scikit-learn
 
 pypdf
 beautifulsoup4
 requests
 tqdm
+
