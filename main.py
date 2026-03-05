@@ -54,3 +54,8 @@ class Query(BaseModel):
 def chat(query: Query):
     answer = ask_chatbot(query.question)
     return {"answer": answer}
+
+
+# Run server
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
