@@ -52,6 +52,7 @@ class Query(BaseModel):
 # API Endpoint
 @app.post("/chat")
 def chat(query: Query):
+    from rag_chatbot.chatbot_model import ask_chatbot
     answer = ask_chatbot(query.question)
     return {"answer": answer}
 
