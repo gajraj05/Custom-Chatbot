@@ -41,6 +41,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from rag_chatbot.chatbot_model import ask_chatbot
 
+print("Starting FastAPI server...")
+
 app = FastAPI()
 
 # Request body
